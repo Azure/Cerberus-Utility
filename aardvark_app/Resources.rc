@@ -1,0 +1,27 @@
+// Copyright (c) Microsoft Corporation. All rights reserved.
+// Licensed under the MIT license.
+
+#include "..\version.h"
+
+1       VERSIONINFO
+FILEVERSION     UTILITY_VERSION_MAJOR,UTILITY_VERSION_MINOR,UTILITY_VERSION_RELEASE,UTILITY_VERSION_BUILD
+PRODUCTVERSION  UTILITY_VERSION_MAJOR,UTILITY_VERSION_MINOR,UTILITY_VERSION_RELEASE,UTILITY_VERSION_BUILD
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "FileVersion", UTILITY_VERSION_STRING
+            VALUE "ProductVersion", UTILITY_VERSION_STRING
+            VALUE "OriginalFilename", "cerberus_utility.exe"
+            VALUE "FileDescription", "Utility to communicate with Cerberus devices over I2C"
+            VALUE "CompanyName", "Microsoft Corporation"
+            VALUE "LegalCopyright", "Copyright (C) Microsoft Corporation.  All rights reserved."
+            VALUE "ProductName", "Cerberus Utility"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+            VALUE "Translation", 0x0409, 0x04B0
+    END
+END
